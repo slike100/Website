@@ -4,10 +4,10 @@
       <h1 class="firstName">SAM</h1>
       <h2 class="secondName">Slike</h2>
     </section>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/">Experience</router-link>
-      <router-link to="/projects">Projects</router-link>
+    <div class="nav">
+      <router-link  class="link" to="/">Home</router-link>
+      <router-link  class="link" to="/">Experience</router-link>
+      <router-link  class="link" to="/projects">Projects</router-link>
     <router-view />
     </div>
   </div>
@@ -27,8 +27,12 @@ export default {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 30%;
+  max-height: 200px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   opacity: 1;
+  justify-content: space-between;
+  align-items: center;
   .header {
     display: flex;
     flex-direction: column;
@@ -36,23 +40,37 @@ export default {
       letter-spacing: 0;
       color: #7E7E7E;
       opacity: 1;
-      font-size: 99px;
+      font-size: 89px;
       font-family: 'Unica One';
-      margin: 20% 0 0 15%;
+      margin: 0 0 0 17%;
     }
     .secondName {
       text-align: left;
       font-family: 'Unica One';
-      font-size: 75px;
+      font-size: 65px;
       letter-spacing: 0;
       color: #7E7E7E;
       opacity: 1;
-      margin: 0 0 0 15%;
+      margin: 0 0 0 17%;
     }
   }
   .nav {
     display: flex;
     flex-direction: column;
+    margin: 3% 5% 0 0;
+    .link {
+      text-align: right;
+      font-family: 'Unica One';
+      font-size: 25px;
+      letter-spacing: 0;
+      color: #7E7E7E;
+      opacity: 1;
+      text-decoration: none;
+      margin-bottom: 8%;
+      &:hover {
+        color: black;
+      }
+    }
   }
 }
 
