@@ -137,4 +137,25 @@ export default {
     }
 }
 }
+
+
+@media (max-width: 399px){
+  .about {
+    width: 100%;
+    height: 1000px;
+    background: #456496;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 5% 7% 25% 28% 11.5% 11.5%;
+    .firstParagraph {
+      grid-row-start: 3; 
+      grid-row-end: 5;
+    }
+    .imgContainer {
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+  }
+}
 </style>
