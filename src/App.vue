@@ -17,8 +17,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.app {
+#app {
   margin: 0;
+  height: auto;
 }
 
 </style>
