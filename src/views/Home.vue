@@ -33,11 +33,13 @@ export default {
 
 .about {
     width: 100%;
+    min-height: 500px;
+    max-height: 2100px;
     background: #456496;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: 15% 20% 65%;
+    grid-template-rows: 15% 15% 70%;
     justify-content: space-between;	
     .line {
         border: 1px solid #FFFFFF;
@@ -73,25 +75,34 @@ export default {
       width: 80%;
       grid-column-start: 3;
       grid-row-start: 2;
-      align-self: center;
-      justify-self: center;
+      grid-row-end: 3;
       align-items: center;
+      align-self: stretch;
+      justify-self: stretch;
+      margin-top: 20%;
     }
     .img {
       width: 100%;
       height: 80%;
+
     }
 }
 
-@media (max-width: 768px){
+// @media (max-width: 1000px){
+//   .about {
+//     grid-template-rows: 8% 15% 75%;
+//   } 
+// }
+
+@media (max-width: 769px){
   .about {
     width: 100%;
-    height: 1200px;
+    height: 1500px;
     background: #456496;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: 5% 8% 25% 12% 20% 12%;
+    grid-template-rows: 5% 6% 20% 5% 20% 12%;
     justify-content: space-between;	
     .line {
         border: 1px solid #FFFFFF;
@@ -135,26 +146,51 @@ export default {
       width: 100%;
       height: 80%;
     }
-}
+  }
 }
 
 
-@media (max-width: 399px){
+@media (max-width: 491px){
   .about {
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     background: #456496;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: 5% 7% 25% 28% 11.5% 11.5%;
+    grid-template-rows: 5% 7% 25% 14% 11.5% 11.5%;
     .firstParagraph {
       grid-row-start: 3; 
       grid-row-end: 5;
     }
     .imgContainer {
+      justify-self: start;      
       grid-row-start: 5;
       grid-row-end: 6;
+      margin: 0 13% 0 8%;
+    }
+  }
+}
+
+@media (max-width: 376px){
+  .about {
+    width: 100%;
+    height: 1100px;
+    background: #456496;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 5% 7% 25% 25% 11.5% 11.5%;
+    .firstParagraph {
+      grid-row-start: 3; 
+      grid-row-end: 5;
+    }
+    .imgContainer {
+      justify-self: start;      
+      grid-row-start: 5;
+      grid-row-end: 6;
+      margin: 0 13% 0 8%;
+
     }
   }
 }
