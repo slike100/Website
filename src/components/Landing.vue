@@ -8,7 +8,6 @@
       <router-link  class="link" to="/">Home</router-link>
       <router-link  class="link" to="/">Experience</router-link>
       <router-link  class="link" to="/projects">Projects</router-link>
-    <router-view />
     </div>
   </div>
 </template>
@@ -28,7 +27,7 @@ export default {
   flex-direction: row;
   width: 100%;
   height: 30%;
-  max-height: 200px;
+  max-height: 200px; 
   background: #FFFFFF 0% 0% no-repeat padding-box;
   opacity: 1;
   justify-content: space-between;
