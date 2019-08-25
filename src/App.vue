@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <landing />
+    <landing />   
+    <router-view />
   </div>
 </template>
 
@@ -16,6 +17,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#app {
+  margin: 0;
+  height: auto;
+}
 
 </style>
 
