@@ -26,7 +26,8 @@ export default {
     margin: 0;
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(3, 33%);
+    grid-template-rows: 15% 42.5% 42.5%;
+    justify-content: space-between;	
     .line {
         border: 1px solid #FFFFFF;
         width: 95%;
