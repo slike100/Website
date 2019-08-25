@@ -2,13 +2,13 @@
   <div class="home">
     <section class="header">
       <h1 class="firstName">SAM</h1>
-      <h2 class="secondName">Slike</h2>
+      <h2 class="secondName">SLIKE</h2>
     </section>
     <div class="nav">
       <router-link  class="link" to="/">Home</router-link>
-      <router-link  class="link" to="/">Experience</router-link>
-      <router-link  class="link" to="/projects">Projects</router-link>
-    <router-view />
+      <router-link  class="link" to="/" event="">Experience</router-link>
+      <router-link  class="link" to="/projects" event="">Projects</router-link>
+      <a class='link' href="./Sam_Slike_Resume.pdf" target="_blank">Resume</a>
     </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
   flex-direction: row;
   width: 100%;
   height: 30%;
-  max-height: 200px;
+  max-height: 200px; 
   background: #FFFFFF 0% 0% no-repeat padding-box;
   opacity: 1;
   justify-content: space-between;
@@ -38,32 +38,32 @@ export default {
     flex-direction: column;
     .firstName {
       letter-spacing: 0;
-      color: #7E7E7E;
+      color: #456496;
       opacity: 1;
       font-size: 89px;
       font-family: 'Unica One';
-      margin: 0 0 0 17%;
+      margin: 30% 0 0 17%;
     }
     .secondName {
       text-align: left;
       font-family: 'Unica One';
       font-size: 65px;
       letter-spacing: 0;
-      color: #7E7E7E;
+      color: #456496;
       opacity: 1;
-      margin: 0 0 0 17%;
+      margin: 0 0 30% 17%;
     }
   }
   .nav {
     display: flex;
     flex-direction: column;
-    margin: 3% 5% 0 0;
+    margin: 2% 5% 0 0;
     .link {
       text-align: right;
       font-family: 'Unica One';
       font-size: 25px;
       letter-spacing: 0;
-      color: #7E7E7E;
+      color: #456496;
       opacity: 1;
       text-decoration: none;
       margin-bottom: 8%;
