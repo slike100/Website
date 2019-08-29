@@ -20,6 +20,7 @@ export default {
 #app {
   margin: 0;
   height: auto;
+  height: 100vh;
 }
 
 </style>

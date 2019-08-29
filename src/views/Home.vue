@@ -2,11 +2,11 @@
   <div class="about">
       <div class="line"></div>
       <h2 class="aboutHeading">About Sam</h2>
-      <p class="firstParagraph">Sam is a software engineer with over three years of professional experience and a demonstrated history of working in the technology industry.  With a bachelor degree in finance, Sam has a set of expertise that help him solve complex problems and approach them in a unique and efficient way.
+      <p class="firstParagraph">Sam is a software engineer who is passionate about web and back-end technologies. He loves working on teams and enjoys the challenge of tackling new technologies. With a bachelor degree in finance, Sam has a set of expertise that help him solve complex problems and approach them in a unique and efficient way.
       <br>
       <br>
       <br>
-      He is passionate about web and back-end technologies. In his free time Sam enjoys playing and watching basketball, rock climbing, and climbing the nearest mountain.
+      Sam recently completed the <a class="referenceLink" href="https://www.techtonic.com/">Techtonic Apprenticeship</a> and is currently working in Boulder, CO as a full-stack engineer at <a class="referenceLink" href="https://ihsmarkit.com/products/digital.html">IHS Markit</a>. In his free time Sam enjoys playing and watching basketball, the challenge of rock climbing, and running up nearest mountain.
       </p>
       <div class="imgContainer">
         <img :src="img" alt="" style="width: 100%">
@@ -69,6 +69,17 @@ export default {
       grid-column-end: 3;
       grid-row-start: 3; 
       margin: 0 13% 0 8%;
+      .referenceLink {
+        text-decoration: underline;
+        color: white;
+          &:hover {
+              text-decoration: none;
+          }
+          &:active {
+              text-decoration: none;
+              color: white;
+          }
+      }
     }
     .imgContainer {
       height: 100%;
@@ -84,7 +95,6 @@ export default {
     .img {
       width: 100%;
       height: 80%;
-
     }
 }
 

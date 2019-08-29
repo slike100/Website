@@ -6,8 +6,8 @@
     </section>
     <div class="nav">
       <router-link  class="link" to="/">Home</router-link>
-      <router-link  class="link" to="/" event="">Experience</router-link>
-      <router-link  class="link" to="/projects" event="">Projects</router-link>
+      <!-- <router-link  class="link" to="/" event="">Experience</router-link> -->
+      <router-link  class="link" to="/projects">Projects</router-link>
       <a class='link' href="./Sam_Slike_Resume.pdf" target="_blank">Resume</a>
     </div>
   </div>
